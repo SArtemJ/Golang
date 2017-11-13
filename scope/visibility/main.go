@@ -1,6 +1,7 @@
 package main
 
-import ("fmt"
+import (
+	"fmt"
 	"github.com/SArtemJ/GoLang/scope/visibility/someMore"
 )
 
@@ -13,7 +14,7 @@ func main() {
 
 func secondFunc() {
 	//fmt.Println(x)
-	fmt.Println(someMore.max(11))
+	fmt.Println(someMore.Max(11))
 }
 
 var y = 101
