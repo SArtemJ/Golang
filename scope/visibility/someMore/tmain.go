@@ -2,8 +2,8 @@ package someMore
 
 import "fmt"
 
-//upperCase to see in files package
-//lowerCase can't see inside package
+//upperCase to see in this package
+//lowerCase can't see outside this package
 func Max(x int) int {
 	return 55 + x
 
