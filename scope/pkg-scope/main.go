@@ -11,7 +11,6 @@ func main() {
 
 	t := 101
 	fmt.Println(t)
-
 }
 
 func secondFunc() {

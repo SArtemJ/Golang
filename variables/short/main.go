@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+
 func main()  {
 
 	a := 10
@@ -9,9 +10,10 @@ func main()  {
 	c := 3.14
 	d := true
 
+	//%T -  show typeof var
 	//%v value in default format
-	fmt.Printf("%T \n", a)
-	fmt.Printf("%T \n", b)
-	fmt.Printf("%T \n", c)
-	fmt.Printf("%T \n", d)
+	fmt.Printf("%T - %v \n", a, a)
+	fmt.Printf("%T - %v \n", b, b)
+	fmt.Printf("%T - %v \n", c, c)
+	fmt.Printf("%T - %v \n", d, d)
 }

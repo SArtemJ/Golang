@@ -10,7 +10,7 @@ func Max(x int) int {
 }
 
 func main() {
-	//max := max(10) very bad
+	//max := max(10) --very bad practice
 	result := Max(10)
 	fmt.Println(result)
 }
