@@ -9,6 +9,9 @@ type person struct {
 }
 
 func main() {
+
+	var x person //zero value fields
+	fmt.Println(x)
 	p1 := person{"John", "Doe", 30}
 	p2 := person{"Elliot", "Alderson", 25}
 	fmt.Println(p1.first, p1.last, p1.age)
