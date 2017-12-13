@@ -1,6 +1,7 @@
-package _2
+package main
 
 import "fmt"
+
 
 type Square struct {
 	side float64
