@@ -4,12 +4,14 @@ import (
 	"fmt"
 	"math/rand"
 	"sync"
+	"sync/atomic"
 	"time"
 )
 
 var wait sync.WaitGroup
-var counter int
-var mutex sync.Mutex
+var counter int64
+
+//var mutex sync.Mutex
 
 func main() {
 
@@ -25,10 +27,11 @@ func incrementator(s string) {
 		//x := counter
 		//x++
 		time.Sleep(time.Duration(rand.Intn(3)) * time.Millisecond)
-		mutex.Lock()
-		counter++
+		//mutex.Lock()
+		//counter++
+		atomic.AddInt64(&counter, 1)
 		fmt.Println(s, i, "Counter: ", counter)
-		mutex.Unlock()
+		//mutex.Unlock()
 	}
 	wait.Done()
 }
